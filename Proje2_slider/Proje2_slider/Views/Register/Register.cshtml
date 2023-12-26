@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaydedilen Veriler</title>
+    <style>
+    body { margin: 0; 
+           padding: 0; 
+           display: flex; 
+           align-items: center; 
+           justify-content: center; 
+           height: 100vh; 
+           background-image: url('https://c4.wallpaperflare.com/wallpaper/88/769/281/1920x1080-px-digital-art-japan-minimalism-simple-background-sun-trees-video-games-star-wars-hd-art-wallpaper-preview.jpg'); 
+           /* Arkaplan resmini buraya ekle */ 
+           background-size: cover;
+           background-position: center;
+           color: white; /* Yazı rengini beyaz yapabilirsiniz, isteğe bağlı */ 
+
+    }
+
+        #savedData {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Geçirgen siyah arka plan */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Kaydedilen Veriler</h2>
+    <pre id="savedData"></pre>
+
+    <script>
+        // LocalStorage'dan veriyi al ve göster
+        var savedData = localStorage.getItem('kayitlar');
+        document.getElementById('savedData').innerText = savedData || 'Henüz veri kaydedilmemiş.';
+
+        
+    </script>
+</body>
+</html>
+

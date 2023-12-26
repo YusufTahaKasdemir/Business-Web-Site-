@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Yusuf Taha Kaşdemir</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/agency/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="~/agency/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="~/agency/assets/css/templatemo-tale-seo-agency.css">
+    <link rel="stylesheet" href="~/agency/assets/css/owl.css">
+    <link rel="stylesheet" href="~/agency/assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+ 
+</head>
+
+<body>
+
+
+   
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="@Url.Action("Index","Home")" class="logo">
+                            <img src="~/agency/assets/images/logo.png" alt="" style="max-width: 112px;">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#services">Services</a></li>
+                            <li class="scroll-to-section"><a href="#projects">Projects</a></li>
+                            <li class="has-sub">
+                                <a href="javascript:void(0)">Pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="@Url.Action("About","About")">About Us</a></li>
+                                    <li><a href="@Url.Action("Faqs","Faqs")">FAQs</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#infos">Infos</a></li>
+                            <li class="scroll-to-section"><a href="#contact">Contact</a></li>
+                            <li class="scroll-to-section"><a href="@Url.Action("Login","Login")">Login</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    @RenderBody()
+
+
+    <script src="~/agency/vendor/jquery/jquery.min.js"></script>
+    <script src="~/agency/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="~/agency/assets/js/isotope.min.js"></script>
+    <script src="~/agency/assets/js/owl-carousel.js"></script>
+    <script src="~/agency/assets/js/tabs.js"></script>
+    <script src="~/agency/assets/js/popup.js"></script>
+    <script src="~/agency/assets/js/custom.js"></script>
+
+
+</body>
+
+</html>
